@@ -6,13 +6,13 @@ The benchmark currently supports VLESS over TCP or gRPC. It builds a sing-box bi
 
 ## Requirements
 
-- [Bun](https://bun.sh/), Go, Git, and curl
+- [Bun](https://bun.sh/), Go, Git, curl, and GitHub SSH access for the submodule
 - Network access to your subscription provider and Cloudflare
 
 ## Setup
 
 ```sh
-git clone https://github.com/meoyawn/singboxer.git
+git clone git@github.com:meoyawn/singboxer.git
 cd singboxer
 bun run setup
 ```
