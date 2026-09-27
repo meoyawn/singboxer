@@ -658,7 +658,7 @@ const basePort = positiveInteger(
 );
 
 const outputPath = process.env.BENCHMARK_OUTPUT
-  ? resolve(repoRoot, process.env.BENCHMARK_OUTPUT)
+  ? resolve(import.meta.dir, process.env.BENCHMARK_OUTPUT)
   : undefined;
 
 console.log("capturing direct IPv4 Cloudflare baseline");
