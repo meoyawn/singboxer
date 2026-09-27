@@ -2,7 +2,5 @@
 
 import { $ } from "bun";
 
-const root = import.meta.dir;
-
-await $`bun install`.cwd(root);
-await $`git submodule update --init --remote --checkout --depth 1 sing-box`.cwd(root);
+await $`bun install`;
+await $`git submodule update --init --remote --checkout --depth 1 sing-box`;
